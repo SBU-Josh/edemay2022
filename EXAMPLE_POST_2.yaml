@@ -1,0 +1,21 @@
+output: ./projects/edemay2022/chains/ACT_full_TTTEEE_Planck_TT650TEEE_BAO_tau_prior_CAMB-EDE
+
+post:
+  suffix: Planck_lensing_BBN_Pantheon
+
+  thin: 4 
+
+  add:
+    likelihood:
+      planck_2018_lensing.clik:
+        path: ./external_modules/
+        clik_file: plc_3.0/lensing/smicadx12_Dec5_ftl_mv2_ndclpp_p_teb_consext8.clik_lensing/clik_lensing/
+      sn.pantheon:
+        path: ./external_modules/data/sn_data
+      BBN:
+        external: 'lambda _self: -0.5 * (_self.provider.get_param("omegabh2") - 0.02233)**2 / (0.00036)**2'
+        requires: ["omegabh2"]
+      Reionization:
+        external: 'lambda _self: -0.5 * (_self.provider.get_param("tau") - 0.06)**2 / (0.01)**2'
+        requires: ["tau"]
+
