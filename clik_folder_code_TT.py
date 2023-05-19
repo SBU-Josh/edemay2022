@@ -19,7 +19,7 @@ path = './external_modules/data/planck/plc_3.0/hi_l/plik_lite/'
 #f.close()
 
 #Create a copy of .clik folder to place the modified covariance matrix into
-copy_clik = 'cp -R '+path+'plik_lite_v22_TT_copy.clik/ '+path+label+'.clik'
+copy_clik = 'cp -R '+path+'plik_lite_v22_TT.clik/ '+path+label+'.clik'
 #print(copy_clik)
 os.system(copy_clik)
 #print('done')
