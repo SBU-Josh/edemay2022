@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #SBATCH --job-name=ede
-#SBATCH --output=ede-%A_%a.out
-#SBATCH -e ede-%A_%a.out.err
+#SBATCH --output=./projects/edemay2022/out/ede-%A_%a.out
+#SBATCH -e ./projects/edemay2022/err/ede-%A_%a.out.err
 #SBATCH --nodes=1
 #SBATCH --ntasks=4
 #SBATCH --cpus-per-task=7
@@ -25,7 +25,7 @@ echo Number of OpenMP cores is $SLURM_CPUS_PER_TASK
 echo SLURM DIR is $SLURM_SUBMIT_DIR
 
 cd $SLURM_SUBMIT_DIR
-conda activate cocoa
+conda activate cocoa2
 source start_cocoa
 
 export OMP_PROC_BIND=close
@@ -35,4 +35,4 @@ else
   export OMP_NUM_THREADS=1
 fi
 
-mpirun -n ${SLURM_NTASKS} --mca btl tcp,self --bind-to core --map-by numa:pe=${OMP_NUM_THREADS} cobaya-run ./projects/ede/EXAMPLE_MCMC_${SLURM_ARRAY_TASK_ID}.yaml -r
+mpirun -n ${SLURM_NTASKS} --mca btl tcp,self --bind-to core --map-by numa:pe=${OMP_NUM_THREADS} cobaya-run ./projects/edemay2022/EXAMPLE_MCMC_${SLURM_ARRAY_TASK_ID}.yaml -r

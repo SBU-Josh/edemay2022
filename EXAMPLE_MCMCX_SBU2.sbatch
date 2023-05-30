@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #SBATCH --job-name=ede
-#SBATCH --output=ede-%A_%a.out
-#SBATCH -e ede-%A_%a.out.err
+#SBATCH --output=./projects/edemay2022/ede-%A_%a.out
+#SBATCH -e ./projects/edemay2022/ede-%A_%a.out.err
 #SBATCH --nodes=1
 #SBATCH --ntasks=4
 #SBATCH --cpus-per-task=10
@@ -35,4 +35,4 @@ else
   export OMP_NUM_THREADS=1
 fi
 
-mpirun -n ${SLURM_NTASKS} --mca btl tcp,self --bind-to core --map-by numa:pe=${OMP_NUM_THREADS} cobaya-run ./projects/ede/EXAMPLE_MCMC_${SLURM_ARRAY_TASK_ID}.yaml -r
+mpirun -n ${SLURM_NTASKS} --mca btl tcp,self --bind-to core --map-by numa:pe=${OMP_NUM_THREADS} cobaya-run ./projects/edemay2022/EXAMPLE_MCMC_${SLURM_ARRAY_TASK_ID}.yaml -r
