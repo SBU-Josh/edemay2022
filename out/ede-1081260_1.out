@@ -3453,3 +3453,14 @@ Checking likelihood './external_modules/data/planck/plc_3.0/low_l/commander/comm
 [3 : mcmc] Progress @ 2023-05-30 13:36:03 : 546 steps taken, and 84 accepted.
 [2 : mcmc] Progress @ 2023-05-30 13:36:06 : 817 steps taken, and 112 accepted.
 [0 : mcmc] Progress @ 2023-05-30 13:36:09 : 614 steps taken, and 90 accepted.
+[1 : mcmc] Progress @ 2023-05-30 13:36:48 : 569 steps taken, and 91 accepted.
+[2 : mcmc] Progress @ 2023-05-30 13:37:06 : 830 steps taken, and 114 accepted.
+[3 : mcmc] Progress @ 2023-05-30 13:37:14 : 577 steps taken, and 89 accepted.
+[0 : mcmc] Progress @ 2023-05-30 13:37:20 : 625 steps taken, and 91 accepted.
+[1 : mcmc] Progress @ 2023-05-30 13:37:53 : 578 steps taken, and 93 accepted.
+[2 : mcmc] Progress @ 2023-05-30 13:38:07 : 841 steps taken, and 116 accepted.
+[3 : mcmc] Progress @ 2023-05-30 13:38:16 : 586 steps taken, and 90 accepted.
+[0 : mcmc] Progress @ 2023-05-30 13:38:22 : 642 steps taken, and 94 accepted.
+[1 : mcmc] Progress @ 2023-05-30 13:38:53 : 586 steps taken, and 94 accepted.
+[2 : mcmc] Progress @ 2023-05-30 13:39:15 : 875 steps taken, and 121 accepted.
+[0 : mcmc] Progress @ 2023-05-30 13:39:24 : 658 steps taken, and 96 accepted.
