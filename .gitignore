@@ -1,3 +1,5 @@
 chains/
+err/
+out/
 *.o
 *.pyc
