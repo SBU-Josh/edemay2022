@@ -13,11 +13,11 @@ milan long-96core: EXAMPLE_MCMCX_SBU5.sbatch
 
 MCMC List:
 
-1. ACT + Planck TT650 + BAO + Tau R-1 = 0.044
+1. ACT + Planck TT650 + BAO + Tau R-1 = 0.035
 2. ACT + Planck TT650TEEE + BAO + Tau R-1 = 0.035
 3. Planck TTTEEE + BAO + Tau R-1 = 0.035
-4. ACT + Planck TT650 + BAO + Tau + Planck Lensing + SN + BBN R-1 = 0.10
-5. ACT + Planck TT650TEEE + BAO + Tau + Planck Lensing + SN + BBN R-1 = 0.046
+4. ACT + Planck TT650 + BAO + Tau + Planck Lensing + SN + BBN R-1 = 0.092
+5. ACT + Planck TT650TEEE + BAO + Tau + Planck Lensing + SN + BBN R-1 = 0.054
 6. Planck TTTEEE + BAO + Tau + Planck Lensing + SN + BBN R-1 = 0.0099 Done
 
 
